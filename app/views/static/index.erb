@@ -1,2 +1,18 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h1>Link.ly</h1>
+<h3>Shortening URLs one character at a time.</h3>
+
+<form action="/urls" method="post">
+  Enter URL:
+  <input type="text" name="long_url">
+  <input type="submit" value="Submit">
+</form>
+
+<h5>Full Link.ly List!</h5>
+  <p>
+    <% Url.all.each do |link| %>
+      <ul>
+        <li><%= link.long_url %></li>
+        <li><%= link.short_url %></li>
+      </ul>
+    <% end %>
+  </p>
