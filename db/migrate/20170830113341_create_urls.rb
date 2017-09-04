@@ -3,6 +3,7 @@ class CreateUrls < ActiveRecord::Migration[5.0]
     create_table :urls do |t|
       t.string :long_url
       t.string :short_url
+			t.integer :click_counter
       t.timestamps
     end
   end

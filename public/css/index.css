@@ -1,0 +1,28 @@
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: #e6ffe6;
+  margin: 0px;
+}
+
+.header {
+  background-color: #ccffff;
+  padding: 30px;
+
+}
+
+.full_list {
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid grey;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 40%;
+  margin: 1 auto;
+}

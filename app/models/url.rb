@@ -4,4 +4,9 @@ class Url < ActiveRecord::Base
   def short_url
     self.short_url = SecureRandom.hex(3)
   end
+  # 
+  # def click_counter
+  #   counter = 0
+  #
+  # end
 end
