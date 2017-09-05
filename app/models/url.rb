@@ -1,12 +1,8 @@
 class Url < ActiveRecord::Base
-  before_save :short_url
+  before_save :shorten_url
+  validates :long_url, :format => URI::regexp(%w(http https)), presence: true
 
-  def short_url
+  def shorten_url
     self.short_url = SecureRandom.hex(3)
   end
-  # 
-  # def click_counter
-  #   counter = 0
-  #
-  # end
 end

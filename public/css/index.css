@@ -1,14 +1,20 @@
 body {
   font-family: "Lato", sans-serif;
   text-align: center;
-  background-color: #e6ffe6;
+  /*background-color: #e6ffe6;*/
   margin: 0px;
 }
 
 .header {
-  background-color: #ccffff;
-  padding: 30px;
+  background-image: url("https://unsplash.it/1500/500/?blur");
+  padding: 100px;
+  color: white;
+}
 
+form submit .submit-btn {
+  color: white;
+  background-color: salmon;
+  border: none;
 }
 
 .full_list {
