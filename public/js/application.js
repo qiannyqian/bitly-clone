@@ -16,7 +16,7 @@ $(document).ready(function () {
         response['long_url'] + "</td><td>\
         <a href='/" + response['short_url'] + "'>"
         + "http://link.ly/" + response['short_url'] + "</a>"
-        + "</td><td>" + "click_counter"+ "</td></tr>")
+        + "</td><td>" + "0"+ "</td></tr>")
         $('#submit').val("OK!")
       }
     })

@@ -12,18 +12,11 @@ body {
   text-shadow: 20px;
 }
 
-form submit .submit-btn {
-  color: white;
-  background-color: salmon;
-  border: none;
-}
-
 .full_list {
   text-align: center;
 }
 
 table, th, td {
-  border: 1px solid grey;
   text-align: center;
   align-items: center;
   justify-content: center;
