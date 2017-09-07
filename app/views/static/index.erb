@@ -2,17 +2,17 @@
   <h1>LINK.LY</h1>
   <h3>Shortening URLs one character at a time.</h3>
 
-  <form action="/urls" method="post">
+  <form action="/urls" method="post" id="submission">
     Enter URL:
-    <input type="text" name="long_url">
-    <input type="submit" value="Submit" class="submit-btn">
+    <input type="text" name="long_url" id="url-input">
+    <input type="submit" value="Submit">
   </form>
 </div>
 
 
 <div class="full_list">
   <h4>Full Link.ly List!</h4>
-  <table>
+  <table id="url-list">
     <tr>
       <th>Long URL</th>
       <th>Short URL</th>

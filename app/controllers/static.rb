@@ -7,10 +7,12 @@ post '/urls' do
   # ori_url.save
 
   if ori_url.save
-    redirect '/'
+    # redirect '/'
+    {success: true, long_url: ori_url.long_url, short_url: ori_url.short_url}.to_json
   else
     @errors = ori_url.errors.messages
-    erb :"static/index"
+    # erb :"static/index"
+    {success: false}.to_json
   end
 end
 
